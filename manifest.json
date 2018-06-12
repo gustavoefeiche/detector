@@ -1,0 +1,26 @@
+{
+
+  "manifest_version": 2,
+  "name": "Detector",
+  "version": "1.0",
+
+  "description": "Detects all external connections",
+
+  "applications": {
+    "gecko": {
+      "id": "detector@detector.com"
+    }
+  },
+
+  "icons": {
+    "48": "icons/thief.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["detector.js"]
+    }
+  ]
+
+}
